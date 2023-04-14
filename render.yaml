@@ -16,7 +16,7 @@ services:
 #   name: line-bot-python-flask-with-handler
 #   env: python
 #   repo: https://github.com/line/line-bot-sdk-python.git
-#   buildCommand: cd examples/flask-echo;pip install gunicorn -r requirements.txt
+#   buildCommand: cd examples/flask-echo;pip install  -r requirements.txt
 #   startCommand: cd examples/flask-echo;gunicorn app_with_handler:app
 #   plan: free
 #   autoDeploy: false
@@ -29,7 +29,7 @@ services:
 #   name: line-bot-python-flask-kitchensink
 #   env: python
 #   repo: https://github.com/line/line-bot-sdk-python.git
-#   buildCommand: cd examples/flask-kitchensink;pip install gunicorn -r requirements.txt
+#   buildCommand: cd examples/flask-kitchensink;pip install  -r requirements.txt
 #   startCommand: cd examples/flask-kitchensink;gunicorn app:app
 #   plan: free
 #   autoDeploy: false
