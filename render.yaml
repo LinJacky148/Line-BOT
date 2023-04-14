@@ -12,7 +12,7 @@ services:
     sync: false
   - key: LINE_CHANNEL_SECRET
     sync: false
-# - type: web
+  - type: web
 #   name: line-bot-python-flask-with-handler
 #   env: python
 #   repo: https://github.com/line/line-bot-sdk-python.git
