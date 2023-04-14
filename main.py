@@ -8,7 +8,7 @@ from linebot.exceptions import (
 from linebot.models import *
 
 app = Flask(__name__)
-# LINE BOT info
+
 line_bot_api = LineBotApi('B2Pm2vlZgh96tdDoB797o9H/OxuIvYHZL6x1OtjD3qCK+ylC8487TBo0XA7wBPIbgmjOP9RDijajX3OlQvWVUlkuZe6a9vaTwxkfGEVnBFgpIFtBPgUxw1jydYhfOYV3t3MGbgB8GtuQOgYsBlFC/wdB04t89/1O/w1cDnyilFU=')
 handler = WebhookHandler('e53182d29570ead6964c8f03e72cdd0d')
 
@@ -24,7 +24,6 @@ def callback():
         abort(400)
     return 'OK'
 
-# Message event
 @handler.add(MessageEvent)
 def handle_message(event):
     message_type = event.message.type
